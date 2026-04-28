@@ -11,7 +11,7 @@ function ItemCard({ item, onDelete }) {
       <h3>{item.name}</h3>
       <p><strong>Category:</strong> {item.category}</p>
       <p><strong>Price:</strong> ${item.price}</p>
-      <p><strong>Supplier:</strong> {item.supplierName}</p>
+      {item.supplierName && <p><strong>Supplier:</strong> {item.supplierName}</p>}
       <p>{item.description}</p>
 
       <div className="card-actions">
